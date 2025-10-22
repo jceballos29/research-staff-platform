@@ -8,5 +8,9 @@ export const config = {
   cors: {
     origin: process.env.CORS_ORIGIN || '*',
     credentials: true,
+  },
+  oneData: {
+    url: process.env.ONE_DATA_URL || 'https://api.onedata.com',
+    token: process.env.ONE_DATA_TOKEN || '',
   }
 } as const;

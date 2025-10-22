@@ -9,7 +9,6 @@
 		"dev": "nodemon src/index.ts",
 		"seed": "ts-node src/seed.ts",
 		"trackings": "ts-node src/create-trackings.ts"
-		
 	},
 	"nodemonConfig": {
 		"watch": [
@@ -33,6 +32,7 @@
 	},
 	"dependencies": {
 		"@prisma/client": "^6.17.1",
+		"axios": "^1.12.2",
 		"cors": "^2.8.5",
 		"dotenv": "^17.2.3",
 		"express": "^5.1.0",
