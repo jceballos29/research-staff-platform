@@ -1,0 +1,124 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Member {
+  id           String @id @default(cuid())
+  fullName     String
+  email        String @unique
+  ministryName String
+
+  resources Resource[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Customer {
+  id           String @id @default(cuid())
+  name         String
+  cif          String
+  crmAccountId String @unique
+
+  services Service[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Service {
+  id                     String   @id @default(cuid())
+  description            String
+  fiscalYearStart        DateTime
+  hasTrimestralEvidences Boolean
+
+  customerId String
+  customer   Customer @relation(fields: [customerId], references: [id])
+
+  resources Resource[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Resource {
+  id             String         @id @default(cuid())
+  proposalStatus ProposalStatus
+
+  periods   ExclusivePeriod[]
+  trackings Tracking[]
+
+  memberId String
+  member   Member @relation(fields: [memberId], references: [id])
+
+  serviceId String
+  service   Service @relation(fields: [serviceId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ExclusivePeriod {
+  id        String    @id @default(cuid())
+  number    Int
+  startDate DateTime
+  endDate   DateTime?
+
+  resourceId String
+  resource   Resource @relation(fields: [resourceId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Tracking {
+  id                    String         @id @default(cuid())
+  trackingApproveStatus TrackingStatus
+  contentType           ContentType
+  year                  Int
+  month                 Int
+  schedule              String
+
+  resourceId String
+  resource   Resource @relation(fields: [resourceId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum ProposalStatus {
+  Created
+  Pending
+  Approved
+  Rejected
+  Dismissal // baja devuelto    
+  DismissalNotification // modificado
+  ApprovedSDII
+  Approved100_150
+}
+
+enum ContentType {
+  Evidence
+  Training
+  Absence
+}
+
+enum TrackingStatus {
+  Draft
+  Sended
+  Approved
+  Rejected
+  NotNecessary
+}

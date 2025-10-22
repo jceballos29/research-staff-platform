@@ -1,4 +1,4 @@
-import { ResourceExclusivePeriod } from './index';
+
 
 export interface Customer {
   id: string;
@@ -82,7 +82,7 @@ export interface Resource {
   // managers: ResourceManager[];
 
   proposalStatus: ProposalStatus;
-  periods?: ResourceExclusivePeriod[];
+  periods?: ExclusivePeriod[];
   // profileStatus: ProfileStatus;
 
   // hasLeaveDays: boolean;

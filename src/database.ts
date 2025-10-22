@@ -7,24 +7,24 @@ export const customers: Customer[] = [
     cif: 'A46063418',
     crmAccountId: '7d86adca-a3bf-e611-80ea-c4346badc0e4'
   },
-  // {
-  //   id: '68FAA0FB-049C-491B-A24A-7E5DA818EDF4',
-  //   name: '100M MONTADITOS INTERNACIONAL, S.L.',
-  //   cif: 'B85777654',
-  //   crmAccountId: '18f584d9-63c0-e611-80eb-c4346badc0e4'
-  // },
-  // {
-  //   id: '11993772-E9E9-4E8C-80D9-F4766EEDE7C4',
-  //   name: 'NTT DATA SPAIN, S.L.U.',
-  //   cif: 'B82387770',
-  //   crmAccountId: 'ee49e58f-a3bf-e611-80e9-c4346badd004'
-  // },
-  // {
-  //   id: '805F8550-77D5-4A81-B2E5-A64211A22142',
-  //   name: 'ATOS SPAIN, S.A.',
-  //   cif: 'A28240752',
-  //   crmAccountId: 'e0777e3b-abbf-e611-80e9-c4346bad6048'
-  // }
+  {
+    id: '68FAA0FB-049C-491B-A24A-7E5DA818EDF4',
+    name: '100M MONTADITOS INTERNACIONAL, S.L.',
+    cif: 'B85777654',
+    crmAccountId: '18f584d9-63c0-e611-80eb-c4346badc0e4'
+  },
+  {
+    id: '11993772-E9E9-4E8C-80D9-F4766EEDE7C4',
+    name: 'NTT DATA SPAIN, S.L.U.',
+    cif: 'B82387770',
+    crmAccountId: 'ee49e58f-a3bf-e611-80e9-c4346badd004'
+  },
+  {
+    id: '805F8550-77D5-4A81-B2E5-A64211A22142',
+    name: 'ATOS SPAIN, S.A.',
+    cif: 'A28240752',
+    crmAccountId: 'e0777e3b-abbf-e611-80e9-c4346bad6048'
+  }
 ]
 
 export const missions: Mission[] = [
@@ -139,60 +139,60 @@ export const resources: Resource[] = [
     serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
     proposalStatus: ProposalStatus.Approved
   },
-  // {
-  //   id: '01261C41-E9C1-4ED5-AEC7-300E9FE50F95',
-  //   memberId: 'ADC02121-47FA-4EBA-86F8-15C7A36C3898',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: '2A07350F-2248-4263-8485-358A8E608290',
-  //   memberId: '71A9DFCF-D46C-49C3-B950-1AC15E14B7DE',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: '8ED65A62-60D4-43AA-A5CA-4181DAECA203',
-  //   memberId: '2F385EF5-46AC-4B49-9ADC-659C9D1591F4',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: 'A8F014C8-E488-41B9-BBB4-47BEEE85FE55',
-  //   memberId: 'DB117BB0-8AA8-4F02-B318-8ACDD083CE15',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: '21C6D03E-C407-4083-BF34-50780959BA33',
-  //   memberId: 'B2F45181-8A61-4652-AA2F-92345DE7FDE9',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: 'B24BA3DF-5D4B-4327-ACA8-54A4BEBF603B',
-  //   memberId: '53CDF598-C7CD-42EA-9582-98CBF66BF8B6',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: 'CC0EA2E5-BE53-44FA-AA9D-817B21576C77',
-  //   memberId: '3F22CADB-BDE2-4F24-B239-D1DA6D6B7E0A',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: 'E78712D0-B1CB-4F86-9404-87CEB1114C2F',
-  //   memberId: '5CE05856-EB39-49DF-84DE-E10DB981C4FE',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // },
-  // {
-  //   id: '124667E3-E238-4553-AA94-FC9DD84FA644',
-  //   memberId: 'BF5FE32C-E112-4A7B-BF96-EC7173941BF7',
-  //   serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
-  //   proposalStatus: ProposalStatus.Approved
-  // }
+  {
+    id: '01261C41-E9C1-4ED5-AEC7-300E9FE50F95',
+    memberId: 'ADC02121-47FA-4EBA-86F8-15C7A36C3898',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: '2A07350F-2248-4263-8485-358A8E608290',
+    memberId: '71A9DFCF-D46C-49C3-B950-1AC15E14B7DE',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: '8ED65A62-60D4-43AA-A5CA-4181DAECA203',
+    memberId: '2F385EF5-46AC-4B49-9ADC-659C9D1591F4',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: 'A8F014C8-E488-41B9-BBB4-47BEEE85FE55',
+    memberId: 'DB117BB0-8AA8-4F02-B318-8ACDD083CE15',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: '21C6D03E-C407-4083-BF34-50780959BA33',
+    memberId: 'B2F45181-8A61-4652-AA2F-92345DE7FDE9',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: 'B24BA3DF-5D4B-4327-ACA8-54A4BEBF603B',
+    memberId: '53CDF598-C7CD-42EA-9582-98CBF66BF8B6',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: 'CC0EA2E5-BE53-44FA-AA9D-817B21576C77',
+    memberId: '3F22CADB-BDE2-4F24-B239-D1DA6D6B7E0A',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: 'E78712D0-B1CB-4F86-9404-87CEB1114C2F',
+    memberId: '5CE05856-EB39-49DF-84DE-E10DB981C4FE',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  },
+  {
+    id: '124667E3-E238-4553-AA94-FC9DD84FA644',
+    memberId: 'BF5FE32C-E112-4A7B-BF96-EC7173941BF7',
+    serviceId: '2A746BD9-1B70-48CC-98E0-29539A5C2298',
+    proposalStatus: ProposalStatus.Approved
+  }
 ]
 
 export const periods: ExclusivePeriod[] = [
